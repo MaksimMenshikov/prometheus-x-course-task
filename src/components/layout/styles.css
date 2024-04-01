@@ -1,0 +1,66 @@
+.authorization__container {
+  margin: 0px auto;
+  padding: 1rem;
+  display: flex;
+  background-image: linear-gradient(to right, #b4b5b1 0%, #e6e8e6 51%);
+  align-items: center;
+}
+
+.headerActions__container {
+  display: flex;
+  align-items: center;
+}
+
+.authorization {
+  flex: 1 1 50%;
+}
+
+.main-header {
+  text-decoration: none;
+  font-weight: bold;
+  color:black;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.main-header__icon {
+  width: 2rem;
+}
+
+.headerActions__cart {
+  width: 2rem;
+  margin-right: 10px;
+  background: transparent;
+}
+
+.headerActions__heart {
+  width: 2.7rem;
+}
+
+.headerActions__button {
+  margin-right: 10px;
+  padding: 0.4em 1.7em;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #989393;
+  transition: 0.5s;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  height: auto;
+}
+
+.headerActions__button:hover {
+  color: white;
+  box-shadow: 0 0 10px #000000;
+}
+
+.headerActions__avatar {
+  width: 2rem;
+  margin-right: 10px;
+}
+
+.headerActions__user {
+  font-weight: bold;
+  color: #0e0e0e;
+}

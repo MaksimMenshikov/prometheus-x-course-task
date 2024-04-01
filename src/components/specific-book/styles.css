@@ -1,0 +1,230 @@
+/* Спочатку очищаємо всі відступи і межі 
+* - звертаємось до абсолютно всіх тегів на сторінці */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Наступне – змінює підрахунок ширини блоку так, щоб так було зручніше верстати  */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Наступне – прибираємо лінії обведення в деяких браузерах  */
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+:active {
+  outline: none;
+}
+/* Далі переховуємо деякі теги і робимо їх блочними */
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+/* Далі звертаємось до html та body і застосуємо їм параметри, які зрівнюють поведінку шрифтів і елементів для різних браузерів, в тому числі забороняють самовільне збільшення шрифта на iphone н-д. ms -  -moz это для браузеров mozilla, а -o для опера, браузер MicroSoft (IE / edge), а webkit - если вкратце, то Safari (браузер на MacOS) + большинство браузеров на мобилках */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Далі звертаємось до тег форм і просимо їх наслідувати сімейство шрифта, бо за замовчуванням вони не наслідують його */
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* Далі ще кілька параметрів для кількох тегів, які прибирають певні особливості в певних браузерах – н-д, прибирають хрестик в інпутах в Internet Explorer, прибирають зайві відступи в Firefox для кнопок, чистяться стилі маркованих списків */
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+/* В кінці обнуляємо всі наші заголовки h */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*-------------------------  */
+
+@media (max-width: 1200px) {
+  .specific-book__container {
+    width: 90%;
+    padding: 2% 1%;
+  }
+  .specific-book__calculation {
+    height: 12%;
+    flex-basis: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  .specific-book .specific-book__container {
+    width: 80%;
+    padding: 2% 1%;
+  }
+  .specific-book__calculation {
+    height: 10%;
+    flex-basis: 12%;
+  }
+}
+@media (max-width: 768px) {
+  .specific-book .specific-book__container {
+    width: 100%;
+    padding: 2% 1%;
+  }
+  .specific-book__calculation {
+    height: 8%;
+    flex-basis: 10%;
+  }
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.specific-book__container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem - 3rem);
+  overflow: hidden;
+  width: 75%;
+  margin: 0px auto;
+  padding: 2% 1%;
+}
+.specific-book__container p {
+  line-height: 1.8;
+}
+
+.specific-book__container div {
+  padding: 5px 5px 5px 5px;
+}
+
+.specific-book__column {
+  font-size: 0.9vw;
+}
+
+.bookinfo {
+  display: flex;
+  font-display: row;
+  justify-content: space-between;
+}
+
+.specific-book__image {
+  flex-grow: 1;
+}
+
+.specific-book__info {
+  flex-grow: 1;
+}
+
+.specific-book__calculation {
+  flex-grow: 1;
+  flex-shrink: 0;
+  border: 3px dotted #b8b8b8;
+  height: 15%;
+  flex-basis: 20%;
+}
+
+.specific-book__button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.specific-book__add_button {
+  padding: 0.7em 1.7em;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: 0.5s;
+  background-color: #989393;
+  background-color: ;
+  border-radius: 10px;
+  color: #000000;
+  text-align: center;
+  height: auto;
+}
+
+.specific-book__add_button:hover {
+  color: white;
+  box-shadow: 0 0 10px #000000;
+}
+
+.specific-book__add_button:active {
+  color: #808081;
+  background-color: #000000;
+  transition: 0s;
+}
+
+.price,
+.totalPrice,
+.choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalPrice {
+  font-weight: bold;
+}
+
+.choice input[type="number"] {
+  font-size: 0.9em;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  display: block;
+  height: calc(2.25rem + 2px);
+  margin: 0;
+  height: auto;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-moz-inner-spin-button,
+input[type="number"]::-ms-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-moz-outer-spin-button,
+input[type="number"]::-ms-outer-spin-button {
+  opacity: 1;
+}

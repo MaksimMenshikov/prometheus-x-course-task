@@ -1,0 +1,36 @@
+.cart__empty_purchase {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 4rem - 3rem);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cart__purchase_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 20px;
+  padding: 0.7em 1.7em;
+  font-weight: bold;
+  height: auto;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: 0.5s;
+  background-color: #989393;
+  border-radius: 10px;
+  background-position: right bottom;
+  color: #000000;
+}
+.cart__purchase_button:hover {
+  color: white;
+  box-shadow: 0 0 10px #989393;
+}
+
+.cart__purchase_button:disabled {
+  color: white;
+  background-color: #bebebe;
+  box-shadow: none;
+}

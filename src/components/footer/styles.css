@@ -1,0 +1,17 @@
+footer {
+  margin-top: auto;
+  background-image: linear-gradient(to right, #b4b5b1 0%, #e6e8e6 51%);
+}
+
+.footerText {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+.footerText__link {
+  color: #515251;
+  text-shadow: 1px 1px 1px #000000;
+}

@@ -1,0 +1,42 @@
+.purchase__table-container {
+  min-height: calc(100vh - 4rem - 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.purchase__table table {
+  border-collapse: collapse;
+}
+
+.purchase__table tbody tr:hover {
+  background-color: #dddddd;
+}
+
+.purchase__table th {
+  background-image: linear-gradient(to right, #b4b5b1 0%,#e6e8e6 51%);
+}
+
+.purchase__table th,
+.purchase__table td {
+  border: 1px solid #ccc6c6;
+  padding: 0.7em;
+}
+
+.purchase__table td:nth-child(1) {
+  width: 500px;
+}
+
+.purchase__delete-button {
+  border: none;
+}
+
+.purchase__delete-button:hover {
+  color: #989393;
+  transform: scale(1.3);
+}
+
+.purchase__grand-total {
+  font-weight: bold;
+}
