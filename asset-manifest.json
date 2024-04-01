@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/prometheus-x-course-task/static/css/main.f79230a9.css",
+    "main.js": "/prometheus-x-course-task/static/js/main.cd798608.js",
+    "static/js/787.58e11849.chunk.js": "/prometheus-x-course-task/static/js/787.58e11849.chunk.js",
+    "static/media/imageNotFoundVertical.png": "/prometheus-x-course-task/static/media/imageNotFoundVertical.7b3c9bafc7aad88a0276.png",
+    "static/media/cropped.png": "/prometheus-x-course-task/static/media/cropped.99a51888dbbdaedc9c59.png",
+    "static/media/avatar.png": "/prometheus-x-course-task/static/media/avatar.d27ce3fa819bd8a21f06.png",
+    "static/media/cart.svg": "/prometheus-x-course-task/static/media/cart.755137b364db6c75199876d1fdb131f9.svg",
+    "index.html": "/prometheus-x-course-task/index.html",
+    "static/media/trash-fill.svg": "/prometheus-x-course-task/static/media/trash-fill.8156f5b5cf35667c43bd0f65ae7c9bcc.svg",
+    "static/media/person-heart.svg": "/prometheus-x-course-task/static/media/person-heart.3bde487c146fd046b7e0.svg",
+    "static/media/unlock-fill.svg": "/prometheus-x-course-task/static/media/unlock-fill.c3990895f1609a0674d9.svg",
+    "main.f79230a9.css.map": "/prometheus-x-course-task/static/css/main.f79230a9.css.map",
+    "main.cd798608.js.map": "/prometheus-x-course-task/static/js/main.cd798608.js.map",
+    "787.58e11849.chunk.js.map": "/prometheus-x-course-task/static/js/787.58e11849.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f79230a9.css",
+    "static/js/main.cd798608.js"
+  ]
+}
